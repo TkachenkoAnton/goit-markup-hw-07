@@ -551,11 +551,11 @@ label {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  color: var(--primary-headline);
+  color: #212121;
 }
 
 .ourteam__item {
-  background-color: var(--primary-background-color);
+  background-color: #ffffff;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -576,7 +576,7 @@ label {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  color: var(--primary-headline);
+  color: #212121;
 }
 
 .ourteam__description {
@@ -595,7 +595,7 @@ label {
   display: flex;
   width: 44px;
   height: 44px;
-  background: var(--joinin-links-background);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -614,11 +614,11 @@ label {
 
 .socialnetworks__link:hover,
 .socialnetworks__link:focus {
-  background-color: var(--activestate);
+  background-color: #2196f3;
 }
 
 .socialnetworks__link:hover .socialnetworks__icon,
 .socialnetworks__link:focus .socialnetworks__icon {
-  fill: var(--primary-background-color);
+  fill: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */
