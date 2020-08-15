@@ -18,12 +18,16 @@
   margin-right: 30px;
 }
 
-.example__item:nth-child(3n) {
-  margin-right: 0px;
+.example__item {
+  &:nth-child(3n) {
+    margin-right: 0px;
+  }
 }
 
-.example__item:nth-child(-n + 6) {
-  margin-bottom: 30px;
+.example__item {
+  &:nth-child(-n + 6) {
+    margin-bottom: 30px;
+  }
 }
 
 .example__title {
@@ -66,14 +70,18 @@
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.example__link:hover,
-.example__link:focus {
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    0px 1px 1px rgba(0, 0, 0, 0.12);
+.example__link {
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
 }
 
-.example__link:hover .example__about,
-.example__link:focus .example__about {
-  transform: translateY(0%);
-  opacity: 1;
+.example__about {
+  .example__link:hover &,
+  .example__link:focus & {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }

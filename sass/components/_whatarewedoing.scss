@@ -19,8 +19,10 @@
   position: relative;
 }
 
-.whatarewedoing__item:not(:last-child) {
-  margin-right: 30px;
+.whatarewedoing__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .whatarewedoing__title {

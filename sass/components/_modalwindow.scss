@@ -55,9 +55,11 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.closebtn:hover .closebtn__icon,
-.closebtn:focus .closebtn__icon {
-  fill: $activestate;
+.closebtn__icon {
+  .closebtn:hover &,
+  .closebtn:focus & {
+    fill: $activestate;
+  }
 }
 
 .modal__invite {
@@ -101,9 +103,11 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.order__input:focus ~ .order__icon,
-.order__input:not(:placeholder-shown) ~ .order__icon {
-  fill: $activestate;
+.order__icon {
+  .order__input:focus ~ &,
+  .order__input:not(:placeholder-shown) ~ & {
+    fill: $activestate;
+  }
 }
 
 .order__text,
@@ -118,15 +122,26 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.order__label:focus-within .order__text,
-.comments:focus-within .comments__text,
-.order__input:not(:placeholder-shown) + .order__text,
-.comments__area:not(:placeholder-shown) + .comments__text {
-  transform: translate(-25px, -30px);
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: $activestate;
+.order__text {
+  .order__label:focus-within &,
+  .order__input:not(:placeholder-shown) + & {
+    transform: translate(-25px, -30px);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $activestate;
+  }
+}
+
+.comments__text {
+  .comments:focus-within &,
+  .comments__area:not(:placeholder-shown) + & {
+    transform: translate(-25px, -30px);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $activestate;
+  }
 }
 
 .comments__area {
@@ -146,17 +161,22 @@
   margin-left: 16px;
 }
 
-.comments:focus-within .comments__text {
-  transform: translateY(-30px);
+.comments__text {
+  .comments:focus-within & {
+    transform: translateY(-30px);
+  }
+}
+.comments__text {
+  .comments__area:not(:placeholder-shown) + & {
+    transform: translateY(-30px);
+  }
 }
 
-.comments__area:not(:placeholder-shown) + .comments__text {
-  transform: translateY(-30px);
-}
-
-.order__input:focus,
-.comments__area:focus {
-  border-color: $activestate;
+.order__input,
+.comments__area {
+  &:focus {
+    border-color: $activestate;
+  }
 }
 
 .checkbox {
@@ -197,13 +217,19 @@
   opacity: 0;
 }
 
-.checkbox__input:checked + .checkbox__custom-made .checkbox__icon {
-  opacity: 1;
+.checkbox__custom-made {
+  .checkbox__icon {
+    .checkbox__input:checked + & {
+      opacity: 1;
+    }
+  }
 }
 
-.checkbox__input:checked + .checkbox__custom-made {
-  background-color: $activestate;
-  border: 2px solid $activestate;
+.checkbox__custom-made {
+  .checkbox__input:checked + & {
+    background-color: $activestate;
+    border: 2px solid $activestate;
+  }
 }
 
 .checkbox__text {

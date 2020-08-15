@@ -25,20 +25,29 @@
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.partners__item:not(:last-child) {
-  margin-right: 30px;
+.partners__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-
 .partners__icon {
   margin: auto;
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.partners__link:hover,
-.partners__link:focus,
-.partners__link:hover .partners__icon,
-.partners__link:focus .partners__icon {
-  border-color: $activestate;
-  fill: $activestate;
+.partners__link {
+  &:hover,
+  &:focus {
+    border-color: $activestate;
+    fill: $activestate;
+  }
+}
+
+.partners__icon {
+  .partners__link:hover &,
+  .partners__link:focus & {
+    border-color: $activestate;
+    fill: $activestate;
+  }
 }
