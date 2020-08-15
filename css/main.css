@@ -470,14 +470,18 @@ label {
   color: #757575;
 }
 
-.navigation__link:hover,
-.navigation__link:focus,
+.navigation__link:hover, .navigation__link:focus,
 .contacts__link:hover,
-.contacts__link:focus,
+.contacts__link:focus {
+  color: #2196f3;
+  fill: #2196f3;
+}
+
 .contacts__link:hover .contacts__envelope,
-.contacts__link:focus .contacts__envelope,
-.contacts__link:hover .contacts__smartphone,
-.contacts__link:focus .contacts__smartphone {
+.contacts__link:focus .contacts__envelope, .contacts__link:hover
+.contacts__smartphone,
+.contacts__link:focus
+.contacts__smartphone {
   color: #2196f3;
   fill: #2196f3;
 }
@@ -573,8 +577,7 @@ label {
   margin-right: 10px;
 }
 
-.socialcommunity__link:hover,
-.socialcommunity__link:focus {
+.socialcommunity__link:hover, .socialcommunity__link:focus {
   background-color: #2196f3;
 }
 

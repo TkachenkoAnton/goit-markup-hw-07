@@ -13,9 +13,11 @@
   margin-right: 80px;
 }
 
-.logo-adress .logo {
-  display: block;
-  margin-bottom: 20px;
+.logo-adress {
+  .logo {
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 .logobottom {
@@ -69,13 +71,17 @@
   fill: $primary-background-color;
 }
 
-.socialcommunity__item:not(:last-child) {
-  margin-right: 10px;
+.socialcommunity__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
-.socialcommunity__link:hover,
-.socialcommunity__link:focus {
-  background-color: $activestate;
+.socialcommunity__link {
+  &:hover,
+  &:focus {
+    background-color: $activestate;
+  }
 }
 
 .mailing_title {
@@ -108,11 +114,13 @@
   color: $h1-h3-headline;
 }
 
-.mailing__input::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+.mailing__input {
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .mailing__btn {
