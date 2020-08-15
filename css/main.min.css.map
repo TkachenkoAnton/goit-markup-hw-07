@@ -14,12 +14,12 @@
         "../sass/layout/_footer.scss",
         "../sass/pages/_module.scss",
         "../sass/pages/_index.scss",
-        "../sass/pages/_hero.scss",
-        "../sass/pages/_modalwindow.scss",
-        "../sass/pages/_features.scss",
-        "../sass/pages/_whatarewedoing.scss",
-        "../sass/pages/_ourteam.scss",
-        "../sass/pages/_partners.scss"
+        "../sass/components/_hero.scss",
+        "../sass/components/_modalwindow.scss",
+        "../sass/components/_features.scss",
+        "../sass/components/_whatarewedoing.scss",
+        "../sass/components/_ourteam.scss",
+        "../sass/components/_partners.scss"
     ],
     "names": [],
     "file": "main.min.css"
