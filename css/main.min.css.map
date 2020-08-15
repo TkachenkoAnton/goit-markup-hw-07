@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "AIAA,AAAA,IAAI,AAAC,CACH,UAAU,CAAE,UAAU,CACvB,AAED,AAAA,CAAC,CACD,CAAC,AAAA,QAAQ,CACT,CAAC,AAAA,OAAO,AAAC,CACP,UAAU,CAAE,OAAO,CACpB,AAED,AAAA,IAAI,AAAC,CACH,gBAAgB,CAAE,+BAA+B,CACjD,KAAK,CAAE,yBAAyB,CAChC,WAAW,CAAE,wBAAwB,CACrC,cAAc,CAAE,MAAM,CACvB,AAED,AAAA,UAAU,AAAC,CACT,KAAK,CAAE,MAAM,CACb,aAAa,CAAE,IAAI,CACnB,YAAY,CAAE,IAAI,CAClB,MAAM,CAAE,IAAI,CACb,ACtBD,AAAA,EAAE,CACF,EAAE,CACF,EAAE,CACF,CAAC,AAAC,CACA,MAAM,CAAE,CAAC,CACV,AAED,AAAA,GAAG,CACH,CAAC,CACD,KAAK,AAAC,CACJ,OAAO,CAAE,KAAK,CACf,AAED,AAAA,KAAK,AAAC,CACJ,UAAU,CAAE,IAAI,CAChB,OAAO,CAAE,CAAC,CACV,MAAM,CAAE,CAAC,CACV,AAED,AAAA,KAAK,AAAC,CACJ,eAAe,CAAE,IAAI,CACtB",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/base/_modul.scss",
+        "../sass/base/_fonts.scss",
+        "../sass/base/_color.scss",
+        "../sass/base/_globalstyles.scss",
+        "../sass/base/_discharges.scss"
+    ],
+    "names": [],
+    "file": "main.min.css"
+}

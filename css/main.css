@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/* Портфолио */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--primary-background-color);
+  color: var(--primary-font-color);
+  font-family: var(--primary-text-font);
+  letter-spacing: 0.03em;
+}
+
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+img,
+a,
+label {
+  display: block;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */
