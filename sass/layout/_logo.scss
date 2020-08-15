@@ -1,0 +1,15 @@
+.logo {
+  color: $primary-logo-color;
+  font-family: $logo-text-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.navigation .logo {
+  margin-right: 85px;
+}
+
+.logotop {
+  color: $logo-top-color;
+}
